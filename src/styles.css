@@ -105,26 +105,27 @@ body {
 }
 
 .big-about {
-  width: 800px;
+  width: 100%;
   position: relative;
-  font-size: 60px;
+  font-size: 30px;
   line-height: 20px;
   font-family: var(--font-alegreya-sans);
-  color: white;
+  color: black;
   text-align: center;
   display: flex;
-  margin-left: 700px;
+  margin-left: 400px;
   z-index: 20;
 }
 
 .about-welcome {
-  width: 450px;
+  width: 100%;
   position: relative;
   font-size: 18px;
   font-family: var(--font-alegreya-sans);
-  color: lightgray;
+  color: darkgray;
   display: flex;
   text-align: center;
   margin: auto;
   z-index: 20;
+  margin-left: 500px;
 }

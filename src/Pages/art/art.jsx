@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import CartStuff from "../../Context/art-context";
+import {ArtContext, ArtContextProvider, addToCart} from "../../Context/art-context";
 import Link from "react-router-dom";
 import Navbar from "../../Components/navbar";
+import Items from "../../prices.json";
 import "../../styles.css";
 
 const Shop = () => {
@@ -29,11 +30,10 @@ return (
         <div key={Item.Image}>
           <h3>{Item.Name}</h3>
           <p>${Item.Price}</p>
-          <AddToCart Item={Item} />
+          <addToCart Item={Item} />
         </div>
       </div>
     ))}{" "}
-    const art (
     <div className="main-rectangle-div">
       ;
       <div className="background">
@@ -44,7 +44,6 @@ return (
         </div>
       </div>
     </div>
-    );
   </div>
 );
 };

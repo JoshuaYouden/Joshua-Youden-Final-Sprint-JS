@@ -1,5 +1,6 @@
-import React from "react";
-import ItemList from "../art/art";
+import React, { useEffect, useState } from "react";
+import Shop from "../art/art";
+import { Link } from "react-router-dom";
 import "../../styles.css";
 
 const Cart = () => {
@@ -25,9 +26,9 @@ let deleteCart = async (id) => {
   await fetch(`https://localhost:3000/cart/${id}`, {
     method: "DELETE",
   });
-  console.log(cart.id);
+  console.log(Cart.id);
 
-  setCart(cart.filter((cart) => cart.id !== id));
+  setCart(Cart.filter((cart) => cart.id !== id));
 
 return (
   <div className="main-rectangle-div">
@@ -35,13 +36,13 @@ return (
     <div className="background">
       <h2>Your Cart</h2>
       <div>
-        {cart.map((Item) => (
+        {Cart.map((Item) => (
           <div>
             {" "}
             <p key={Item.id}>
               {Item.Image} {Item.Name} ${Item.Price}
             </p>
-            <button onClick={() => deleteCart(Item.id)}>Remove</button>
+            <button onClick={() => deleteCart(Item.id)}>X</button>
           </div>
         ))}
       </div>

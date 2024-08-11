@@ -6,8 +6,16 @@
   display: flex;
 }
 
+.blank-box-2 {
+  width: 60px;
+  margin: 5px;
+  padding: 10px;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
 .nav-bar {
-  width: 1500px;
+  width: 100%;
   position: relative;
   border-radius: 24px;
   background-color: orangered;
@@ -17,7 +25,7 @@
 }
 
 .nav-main {
-  width: 1150px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,9 +80,13 @@
 }
 
 .main {
+  width: 73px;
   position: relative;
   letter-spacing: 0.05em;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .about {

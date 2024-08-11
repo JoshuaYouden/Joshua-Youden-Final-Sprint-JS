@@ -12,7 +12,7 @@ const About = () => {
           </div>
           <div class="blank-box"></div>
           <div class="about-welcome">
-            <h4>Here's some info about me!</h4>
+            <h3>Here's some info about me!</h3>
           </div>
         </main>
         <div class="main-about">
@@ -39,14 +39,6 @@ const About = () => {
               <p>
                 If you want to hire my services to make an art piece for you,
                 contact me at NatureCreator@hotmail.com
-              </p>
-            </div>
-            <div className="blank-box"></div>
-            <div class="column">
-              <h3>Digital Art</h3>
-              <p>
-                Along with being able to draw with pencil and paper, I can also
-                create art using digital applications!
               </p>
             </div>
           </div>
