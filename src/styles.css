@@ -1,0 +1,130 @@
+body {
+  margin: 0 auto;
+  line-height: normal;
+  overflow-x: hidden;
+}
+
+.main-rectangle-div {
+  width: 100%;
+  position: fixed;
+  background: darkorange;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.background {
+  width: 96%;
+  max-width: 100%;
+  position: relative;
+  height: 96%;
+  background-image: url(./Images/Background.jpg);
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  line-height: normal;
+  margin: 0 auto;
+  padding-left: 20px;
+  z-index: 10;
+}
+
+.blank-box {
+  width: 20px;
+  margin: 5px;
+  padding: 10px;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.blank-box-2 {
+  width: 60px;
+  margin: 5px;
+  padding: 10px;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.blank-box-top {
+  width: 60px;
+  margin-top: 5px;
+  padding: 10px;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.Big-Confirm {
+  position: relative;
+  font-size: 40px;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding: 20px;
+  color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  border-width: 5px;
+}
+
+.main-about {
+  width: 551px;
+  position: relative;
+  background: transparent;
+  height: 522px;
+  margin: auto;
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+  color: white;
+  text-align: left;
+}
+
+.cart-confirm {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding: 20px;
+  color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  border-width: 5px;
+}
+
+.big-about {
+  width: 800px;
+  position: relative;
+  font-size: 60px;
+  line-height: 20px;
+  font-family: var(--font-alegreya-sans);
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-left: 700px;
+  z-index: 20;
+}
+
+.about-welcome {
+  width: 450px;
+  position: relative;
+  font-size: 18px;
+  font-family: var(--font-alegreya-sans);
+  color: lightgray;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  z-index: 20;
+}
