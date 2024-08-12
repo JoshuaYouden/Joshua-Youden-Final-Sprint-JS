@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../Components/navbar";
 import "../../styles.css";
 
 const Thanks = () => {
@@ -7,11 +6,11 @@ const Thanks = () => {
     <div className="main-rectangle-div">
       ;
       <div className="background">
-        <div class="blank-box"></div>
-        <div class="blank-box"></div>
-        <div class="blank-box"></div>
-        <div class="container">
-          <div class="Big-Confirm">
+        <div className="blank-box"></div>
+        <div className="blank-box"></div>
+        <div className="blank-box"></div>
+        <div className="container">
+          <div className="Big-Confirm">
             <h1>THANK YOU FOR BUYING MY ART! YOU PACKAGE WILL ARRIVE SOON!</h1>
           </div>
         </div>

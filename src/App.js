@@ -6,16 +6,15 @@ import Main from "./Pages/main/main";
 import Shop from "./Pages/art/art";
 import About from "./Pages/about/about";
 import Cart from "./Pages/cart/cart";
-import {ArtContextProvider} from "./Context/art-context";
-import Records from "./prices";
+import { CartProvider } from "./Context/cart-context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Checkout from "./Pages/checkout/checkout"
-import Thanks from "./Pages/thanks/thanks"
+import Checkout from "./Pages/checkout/checkout";
+import Thanks from "./Pages/thanks/thanks";
 
 function App() {
   return (
     <div className="App">
-      <ArtContextProvider>
+      <CartProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -25,10 +24,9 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/thanks" element={<Thanks />} />
-            <Route path="/prices" element={<Records />} />
           </Routes>
         </Router>
-      </ArtContextProvider>
+      </CartProvider>
     </div>
   );
 }

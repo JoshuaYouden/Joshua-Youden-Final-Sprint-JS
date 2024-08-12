@@ -1,52 +1,40 @@
-import React, { useEffect, useState } from "react";
-import {ArtContext, ArtContextProvider, addToCart} from "../../Context/art-context";
-import Link from "react-router-dom";
-import Navbar from "../../Components/navbar";
-import Items from "../../prices.json";
+import React, { useContext, useState } from "react";
+import { CartContext } from "../../Context/cart-context";
 import "../../styles.css";
+import ItemsData from "../../prices.json";
 
 const Shop = () => {
+  const { addToCart } = useContext(CartContext);
+  const [items] = useState(ItemsData.ItemsData || []);
 
-const ItemList = () => {
-  const [item, setItems] = useState([]);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      const response = await fetch("https://localhost:3000/items");
-      if (response.ok) {
-        const data = await response.json();
-        setItems(data);
-      } else {
-        console.error("Failed to fetch art");
-      }
-    };
-    fetchItems();
-  }, []);
-
-return (
-  <div>
-    {Items.map((Item) => (
-      <div key={Item.id}>
-        <div key={Item.Image}>
-          <h3>{Item.Name}</h3>
-          <p>${Item.Price}</p>
-          <addToCart Item={Item} />
-        </div>
-      </div>
-    ))}{" "}
+  return (
     <div className="main-rectangle-div">
-      ;
+      <div className="blank-box"></div>
       <div className="background">
-        ;
-        <div className="shop-text">
-          You want to buy some of my art? You've come to the right place, see
-          what I sell!
+        <div className="big-shop">
+          <h4>
+            You want to buy some of my art? You've come to the right place. See
+            what I sell!
+          </h4>
+        </div>
+        <div className="blank-box"></div>
+        <div className="shop-panel">
+          {Array.isArray(items) && items.length > 0 ? (
+            items.map((item) => (
+              <div key={item.Id} className="item-card">
+                <img src={item.Image} alt={item.Name} />
+                <h3>{item.Name}</h3>
+                <p>${item.Price}</p>
+                <button onClick={() => addToCart(item)}>Add to Cart</button>
+              </div>
+            ))
+          ) : (
+            <p>No items available</p>
+          )}
         </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
-}
 
-export default Shop
+export default Shop;

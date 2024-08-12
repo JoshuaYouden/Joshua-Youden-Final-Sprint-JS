@@ -1,56 +1,96 @@
-import React, { useEffect, useState } from "react";
-import Shop from "../art/art";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { CartContext } from "../../Context/cart-context";
 import "../../styles.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
+  const { cart, removeFromCart } = useContext(CartContext);
 
-const CartList = () => {
-  const [cart, setCart] = useState([]);
+  const totalPrice = cart.reduce(
+    (total, item) => total + parseFloat(item.Price),
+    0
+  );
 
-  useEffect(() => {
-    const fetchCart = async () => {
-      const response = await fetch("https://localhost:3000/cart");
-      if (response.ok) {
-        const data = await response.json();
-        setCart(data);
-      } else {
-        console.error("Failed to fetch cart");
-      }
-    };
-    fetchCart();
-  }, [cart]);
-};
-
-let deleteCart = async (id) => {
-  await fetch(`https://localhost:3000/cart/${id}`, {
-    method: "DELETE",
-  });
-  console.log(Cart.id);
-
-  setCart(Cart.filter((cart) => cart.id !== id));
-
-return (
-  <div className="main-rectangle-div">
-    ;
-    <div className="background">
-      <h2>Your Cart</h2>
-      <div>
-        {Cart.map((Item) => (
-          <div>
-            {" "}
-            <p key={Item.id}>
-              {Item.Image} {Item.Name} ${Item.Price}
-            </p>
-            <button onClick={() => deleteCart(Item.id)}>X</button>
-          </div>
-        ))}
+  return (
+    <div className="main-rectangle-div">
+      <div className="blank-box"></div>
+      <div className="background">
+        <div className="blank-box"></div>
+        <div className="blank-box"></div>
+        <div className="cart-panel">
+          <h2>Your Cart</h2>
+          {cart.length === 0 ? (
+            <p>Your cart is empty</p>
+          ) : (
+            cart.map((item, index) => (
+              <div key={index}>
+                <img src={item.Image} alt={item.Name} />
+                <h4>{item.Name}</h4>
+                <p>${item.Price}</p>
+                <button onClick={() => removeFromCart(item.Id)}>Remove</button>
+              </div>
+            ))
+          )}
+          <h3>Total: ${totalPrice.toFixed(2)}</h3>
+        </div>
+        <div className="blank-box">
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <Link to="/checkout">
+            {cart.length > 0 && <button>Proceed to Checkout</button>}
+          </Link>
+        </div>
       </div>
-      <Link to="/checkout">Check Out</Link>
     </div>
-  </div>
-);
-};
+  );
 };
 
 export default Cart;

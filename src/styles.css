@@ -2,6 +2,8 @@ body {
   margin: 0 auto;
   line-height: normal;
   overflow-x: hidden;
+  padding: 0;
+  height: 100%;
 }
 
 .main-rectangle-div {
@@ -17,7 +19,7 @@ body {
   max-width: 100%;
   position: relative;
   height: 96%;
-  background-image: url(./Images/Background.jpg);
+  background-image: url(../public/Images/Background.jpg);
   max-height: 100%;
   background-size: cover;
   background-repeat: repeat;
@@ -55,15 +57,15 @@ body {
 .Big-Confirm {
   position: relative;
   font-size: 40px;
-  width: 800px;
-  height: 500px;
+  width: 55%;
+  height: 55%;
   text-align: center;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 100px;
   padding: 20px;
-  color: white;
-  border: 1px solid lightgrey;
+  color: black;
+  border: 1px solid darkgray;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -88,8 +90,7 @@ body {
 
 .cart-confirm {
   position: relative;
-  width: 100%;
-  max-width: 450px;
+  width: 30%;
   height: 200px;
   text-align: center;
   margin: auto;
@@ -113,7 +114,20 @@ body {
   color: black;
   text-align: center;
   display: flex;
-  margin-left: 400px;
+  margin-left: 600px;
+  z-index: 20;
+}
+
+.big-shop {
+  width: 100%;
+  position: relative;
+  font-size: 30px;
+  line-height: 20px;
+  font-family: var(--font-alegreya-sans);
+  color: black;
+  text-align: center;
+  display: flex;
+  margin-left: 350px;
   z-index: 20;
 }
 
@@ -122,10 +136,82 @@ body {
   position: relative;
   font-size: 18px;
   font-family: var(--font-alegreya-sans);
-  color: darkgray;
+  color: black;
   display: flex;
   text-align: center;
   margin: auto;
   z-index: 20;
-  margin-left: 500px;
+  margin-left: 750px;
+}
+
+.shop-panel {
+  width: 50%;
+  height: 72%;
+  background: #c84800;
+  z-index: 20;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.cart-panel {
+  width: 80%;
+  height: 72%;
+  background: #c84800;
+  z-index: 20;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.shop-panel .item-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.shop-panel img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  color: black;
+  text-align: left;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 20%;
+  height: 10%;
+  padding: 15px 20px;
+  background-color: #c84800;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+input[type="CC"],
+select,
+textarea {
+  width: 10%;
+  height: 10%;
+  padding: 15px 20px;
+  background-color: #c84800;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
 }

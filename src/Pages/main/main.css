@@ -10,8 +10,8 @@
   width: 96%;
   max-width: 100%;
   position: relative;
-  height: 96%;
-  background-image: url(../../Images/Background.jpg);
+  height: 85%;
+  background-image: url(../../../public/Images/Background.jpg);
   max-height: 100%;
   background-size: cover;
   background-repeat: repeat;
@@ -94,4 +94,13 @@
   border-radius: 21px;
   background: #36ff32;
   align-content: center;
+  display: inline-block;
+  mix-blend-mode: luminosity;
+  color: black;
+  font-weight: 700;
+}
+
+.link-button {
+  text-decoration: none;
+  display: inline-block;
 }

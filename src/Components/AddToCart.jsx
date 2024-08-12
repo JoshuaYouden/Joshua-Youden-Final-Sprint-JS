@@ -1,14 +1,14 @@
 import React from "react";
-import Item from "art";
+import ItemsData from "../prices.json";
 
-const AddToCart = ({ Item }) => {
+const addToCart = ({ Items }) => {
   const handleAddToCart = async () => {
     const response = await fetch("https://localhost:3000/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(Item),
+      body: JSON.stringify(Items),
     });
     if (response.ok) {
       console.log("Product added to cart");
@@ -16,7 +16,7 @@ const AddToCart = ({ Item }) => {
       console.error("Failed to add art to cart");
     }
   };
-  return <button onClick={handleAddToCart}>Add</button>;
+  return <button onClick={handleAddToCart}>Add to Cart</button>;
 };
 
-export default AddToCart;
+export default addToCart;

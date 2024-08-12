@@ -1,44 +1,44 @@
 {
-  "Items": [
+  "ItemsData": [
     {
       "Id": "1",
       "Name": "Violet Night",
-      "Image": "./Images/Art 1",
+      "Image": "./Images/Art1.jpg",
       "Price": "620"
     },
 
     {
       "Id": "2",
       "Name": "Nightly Sunset",
-      "Image": "./Images/Art 2",
+      "Image": "./Images/Art2.jpg",
       "Price": "500"
     },
 
     {
       "Id": "3",
       "Name": "Mountain Rise",
-      "Image": "./Images/Art 3",
+      "Image": "./Images/Art3.jpg",
       "Price": "320"
     },
 
     {
       "Id": "4",
       "Name": "Setting of Flight",
-      "Image": "./Images/Art 4",
+      "Image": "./Images/Art4.jpg",
       "Price": "550"
     },
 
     {
       "Id": "5",
       "Name": "Heavenly Light",
-      "Image": "./Images/Art 5",
+      "Image": "./Images/Art5.jpg",
       "Price": "800"
     },
 
     {
       "Id": "6",
       "Name": "Peaceful Plains",
-      "Image": "./Images/Art 6",
+      "Image": "./Images/Art6.jpg",
       "Price": "250"
     }
   ],

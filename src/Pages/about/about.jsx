@@ -7,17 +7,20 @@ const About = () => {
       ;
       <div className="background">
         <main>
-          <div class="big-about">
+          <div className="blank-box"></div>
+          <div className="big-about">
             <h2>So, you want to learn more?</h2>
           </div>
-          <div class="blank-box"></div>
-          <div class="about-welcome">
+          <div className="blank-box"></div>
+          <div className="about-welcome">
             <h3>Here's some info about me!</h3>
           </div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
         </main>
-        <div class="main-about">
+        <div className="main-about">
           <div>
-            <div class="column">
+            <div className="column">
               <h3>Great Artist</h3>
               <p>
                 As you can tell from the background of the site, I have great
@@ -25,7 +28,7 @@ const About = () => {
               </p>
             </div>
             <div className="blank-box"></div>
-            <div class="column">
+            <div className="column">
               <h3>Negotiator</h3>
               <p>
                 Along with being a great artist, I also have an eye for
@@ -34,7 +37,7 @@ const About = () => {
               </p>
             </div>
             <div className="blank-box"></div>
-            <div class="column">
+            <div className="column">
               <h3>Hiring</h3>
               <p>
                 If you want to hire my services to make an art piece for you,
