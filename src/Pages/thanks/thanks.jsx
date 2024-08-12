@@ -1,6 +1,10 @@
+// This code imports what's needed for the site and fuctions to work
 import React from "react";
 import "../../styles.css";
 
+{
+  /* This is the code for the base of the site */
+}
 const Thanks = () => {
   return (
     <div className="main-rectangle-div">
@@ -19,4 +23,4 @@ const Thanks = () => {
   );
 };
 
-export default Thanks;
+export default Thanks; //this code allows it to be used in other components

@@ -1,8 +1,10 @@
+// This code imports what's needed for the site and fuctions to work
 import React, { useContext } from "react";
 import { CartContext } from "../../Context/cart-context";
 import "../../styles.css";
 import { Link } from "react-router-dom";
 
+// This code is the function to allow the cart to show what you added from art.jsx
 const Cart = () => {
   const { cart, removeFromCart } = useContext(CartContext);
 
@@ -18,6 +20,7 @@ const Cart = () => {
         <div className="blank-box"></div>
         <div className="blank-box"></div>
         <div className="cart-panel">
+          {/* This begin's the text on the page with the function that shows the art items in the cart */}
           <h2>Your Cart</h2>
           {cart.length === 0 ? (
             <p>Your cart is empty</p>
@@ -84,6 +87,7 @@ const Cart = () => {
           <div className="blank-box"></div>
           <div className="blank-box"></div>
           <div className="blank-box"></div>
+          {/* Click this to proceed to another component */}
           <Link to="/checkout">
             {cart.length > 0 && <button>Proceed to Checkout</button>}
           </Link>
@@ -93,4 +97,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Cart; //this code allows it to be used in other components

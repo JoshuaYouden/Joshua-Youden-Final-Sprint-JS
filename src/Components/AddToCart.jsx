@@ -1,6 +1,8 @@
+// This code imports what's needed for the fuctions to work
 import React from "react";
 import ItemsData from "../prices.json";
 
+// this code adds the items to the cart
 const addToCart = ({ Items }) => {
   const handleAddToCart = async () => {
     const response = await fetch("https://localhost:3000/cart", {
@@ -19,4 +21,4 @@ const addToCart = ({ Items }) => {
   return <button onClick={handleAddToCart}>Add to Cart</button>;
 };
 
-export default addToCart;
+export default addToCart; //this code allows it to be used in other components

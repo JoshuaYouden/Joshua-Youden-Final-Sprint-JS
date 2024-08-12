@@ -1,3 +1,4 @@
+// This code imports what's needed for the site and fuctions to work
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles.css";
@@ -9,6 +10,7 @@ const Checkout = () => {
       <div className="background">
         <div className="blank-box"></div>
         <div>
+          {/* This begin's the form on the page that you can enter infomation */}
           <div class="cart-confirm">
             <h1>Please enter the following information</h1>
           </div>
@@ -46,6 +48,7 @@ const Checkout = () => {
             <div className="blank-box"></div>
             <div className="blank-box"></div>
             <div className="blank-box"></div>
+            {/* Click this to proceed to another component */}
             <Link to="/thanks">Confirm</Link>
           </div>
         </div>
@@ -54,4 +57,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default Checkout; //this code allows it to be used in other components

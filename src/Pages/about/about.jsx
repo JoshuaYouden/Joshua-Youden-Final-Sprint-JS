@@ -1,13 +1,18 @@
+// This code imports what's needed for the site and fuctions to work
 import React from "react";
 import "../../styles.css";
 
 const About = () => {
+  {
+    /* This is the code for the base of the site */
+  }
   return (
     <div className="main-rectangle-div">
       ;
       <div className="background">
         <main>
           <div className="blank-box"></div>
+          {/* This begins the text on the site */}
           <div className="big-about">
             <h2>So, you want to learn more?</h2>
           </div>
@@ -19,6 +24,7 @@ const About = () => {
           <div className="blank-box"></div>
         </main>
         <div className="main-about">
+          {/* Here's the code for the columns of skills */}
           <div>
             <div className="column">
               <h3>Great Artist</h3>
@@ -52,4 +58,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About; //this code allows it to be used in other components

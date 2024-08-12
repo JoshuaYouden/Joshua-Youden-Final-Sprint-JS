@@ -1,7 +1,11 @@
+// This code imports what's needed for the site and fuctions to work
 import { Link } from "react-router-dom";
 import React from "react";
 import "./main.css";
 
+{
+  /* This is the code for the base of the site */
+}
 const Main = () => {
   return (
     <div className="main-rectangle-div">
@@ -25,6 +29,7 @@ const Main = () => {
         <div className="blank-box-2"></div>
         <div className="blank-box-2"></div>
         <div className="blank-left">
+          {/* Click this to proceed to another component */}
           <Link to="../art" className="link-button">
             <button className="button">Click me to buy some art!</button>
           </Link>
@@ -34,4 +39,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Main; //this code allows it to be used in other components
