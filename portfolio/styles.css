@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e2e2e2;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+#contact input, #contact textarea, #contact button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode #hero {
+    background-color: #2e2e2e;
+}
+
+body.dark-mode .project {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode #skills ul li {
+    background-color: #444;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
