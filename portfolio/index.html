@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Joshua Youden</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio! - Joshua Youden</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="hero">
-        <h1>Hi, I'm Joshua</h1>
-        <p>Software Development Student</p>
-        <button id="theme-toggle">Toggle Dark Mode</button>
+      <h1>Hi, I'm Joshua!</h1>
+      <p>Software Development Student</p>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate software development student at Keyin College. I specialize in web development and enjoy creating interactive, dynamic user experiences. I am constantly learning new technologies and applying them in projects.</p>
+      <h2>About Me</h2>
+      <p>
+        I am a passionate software development student at Keyin College. <br />
+        I enjoy creating interactive, dynamic user experiences when I can.
+        <br />
+        I am constantly learning new technologies and applying them in my
+        projects.
+      </p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <article class="project">
-            <h3>Project 1: [Project Name]</h3>
-            <p>[Description of the project, technologies used, and your role.]</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </article>
-        <article class="project">
-            <h3>Project 2: [Project Name]</h3>
-            <p>[Description of the project, technologies used, and your role.]</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-        </article>
-        <!-- Add more projects as needed -->
+      <h2>Here's some projects I made!</h2>
+      <article class="project">
+        <h3>Project 1: Game Company Website</h3>
+        <p>
+          I created a game company website using JS, HTML, and CSS, and I did it
+          all myself!
+        </p>
+        <a
+          href="https://github.com/JoshuaYouden/Joshua-Youden-Midterm-Sprint-Sem-2.git"
+          target="https://github.com/JoshuaYouden/Joshua-Youden-Midterm-Sprint-Sem-2.git"
+          >View on GitHub</a
+        >
+      </article>
+      <article class="project">
+        <h3>Project 2: Art Selling Website</h3>
+        <p>
+          I created a website that sells art using react!, I also did this by
+          myself!
+        </p>
+        <a
+          href="https://github.com/JoshuaYouden/Joshua-Youden-Final-Sprint-JS.git"
+          target="https://github.com/JoshuaYouden/Joshua-Youden-Final-Sprint-JS.git"
+          >View on GitHub</a
+        >
+      </article>
+      <!-- Add more projects as needed -->
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <ul id="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Python</li>
-            <li>Java</li>
-        </ul>
-        <button id="shuffle-skills">Shuffle Skills</button>
+      <h2>Here's some coding lauguages I know!</h2>
+      <ul id="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+      </ul>
+      <div class="blank-box"></div>
+      <div class="blank-box"></div>
+      <button id="shuffle-skills" class="button">Shuffle Skills</button>
+      <button id="theme-toggle" class="button">Toggle Dark Mode</button>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Joshua Youden. All rights reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
